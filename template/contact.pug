@@ -1,0 +1,98 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/public/images/banner-contact.jpg)')
+        .banner-mask
+            .container
+                h2 联系我们
+                p 始终站在客户的角度主动服务，每一次都超越您的期待
+    main.main
+        .container
+            section.content
+                h2.text-center.b-m-50
+                    | 沟通无障碍，服务更省心
+                .row.b-m-40
+                    figure.col-xs-12.col-sm-12.col-md-6.col-lg-6
+                        .contact
+                            span.contact-dh.hidden-xs
+                            h3
+                                | 致电火星人
+                            p
+                                | 24小时服务热线（售前/售中/售后）
+                                small 0771-3216270 | 0771-3216270 | 0771-3216270
+                    figure.col-xs-12.col-sm-12.col-md-6.col-lg-6
+                        .contact
+                            span.contact-dz.hidden-xs
+                            h3
+                                | 亲临公司
+                            p
+                                a(data-target='#baidumap', data-toggle='modal', href='javascript:void(0)') 在地图上找到我们 →
+                                small 广西南宁市西乡塘区科园大道科园东5路南宁软件园一楼火星人科技
+                    .clearfix.visible-md-block
+                    figure.col-xs-12.col-sm-12.col-md-6.col-lg-6
+                        .contact
+                            span.contact-gt.hidden-xs
+                            h3
+                                | 在线沟通
+                            p
+                                | 周一至周六09:00 - 18:00
+                                small
+                                    a(target='_blank', href="javascript:;") QQ在线沟通
+                    figure.col-xs-12.col-sm-12.col-md-6.col-lg-6
+                        .contact
+                            span.contact-hz.hidden-xs
+                            h3
+                                | 业务合作
+                            p
+                                | 周一至周六09:00 - 18:00
+                                small nnhxr168
+    section.content
+        h2.text-center.b-m-50
+            | 在地图上找到我们
+        #container(style='width:100%;height:455px')
+
+    include lib/footer
+
+block script
+    script.
+        window.onload = function () {
+            init();
+        }
+
+        var searchService,map,markers = [];
+                var init = function() {
+                    var center = new qq.maps.LatLng(31.883425,117.344241);
+                    map = new qq.maps.Map(document.getElementById('container'),{
+                        center: center,
+                        zoom: 13,
+                        scrollwheel: false,
+                    });
+                    new qq.maps.Circle({
+                        center:new qq.maps.LatLng(31.883425,117.344241),
+                        radius:1000,
+                        map: map
+                    });
+                    var latlngBounds = new qq.maps.LatLngBounds();
+                    searchService = new qq.maps.SearchService({
+                        complete : function(results){
+                            var pois = results.detail.pois;
+                            for(var i = 0,l = pois.length;i < l; i++){
+                                var poi = pois[i];
+                                latlngBounds.extend(poi.latLng);
+                                var marker = new qq.maps.Marker({
+                                    map:map,
+                                    position: poi.latLng
+                                });
+
+                                marker.setTitle(i+1);
+
+                                markers.push(marker);
+                            }
+                            map.fitBounds(latlngBounds);
+                        }
+                    });
+                }

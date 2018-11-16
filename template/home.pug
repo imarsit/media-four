@@ -1,0 +1,64 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+block content
+    #page.hfeed.site
+        #main.site-main(role='main')
+            #demo-iframe-holder.desktop(style='height:900px')
+                .inner
+                    iframe.invisible-vlad(width='100%', height='100%', src='index')
+                #demo-panel.demo-panel.clearfix
+                    .demo-panel-logo
+                        a(href="javascript:;")
+                            img(src='/public/images/logo-demo.png')
+
+                    .demo-panel-select
+                        .demo-list-button-wrap
+                            button.demo-list-button
+                                span DedeCMS整站带数据
+                                i.icon-chevron-down
+
+                    .demo-panel-responsive
+                        ul.clearfix
+                            li
+                                a.active(data-device='desktop', href='#')
+                                    i.icon-desktop
+                            li
+                                a.inactive(data-device='ipad-portrait', href='#')
+                                    i.icon-ipad
+                                a(data-device='ipad-landscape', href='#')
+                                    i.icon-ipad-landscape
+                            li
+                                a(data-device='iphone-portrait', href='#')
+                                    i.icon-iphone
+                                a.inactive(data-device='iphone-landscape', href='#')
+                                    i.icon-iphone-landscape
+                    .demo-panel-close
+                        a#demo-panel-close(href='#')
+                            i.icon-close-thin
+
+                    .demo-panel-buttons
+                        a.btn(href="javascript:;")
+                            span Theme Features
+                        a.btn.btn-orange(href="javascript:;")
+                            span
+                                | 立刻购买 
+                                em $ 39
+
+                    a#panelBack.closed(href='#')
+                        i.icon-arrow-down
+block script
+    script.
+        var TFvar = {
+            "theme": "the-core"
+        };
+        $(function () {
+            $("#h").addClass("hover");
+        })
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        })
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff65c46592c680568f3035faca2d34651' type='text/javascript'%3E%3C/script%3E"))
+        window._bd_share_config = { share: [{ "tag": "HBD_FX", "bdSize": 32, }] }
+        with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];

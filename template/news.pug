@@ -1,0 +1,118 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/public/images/banner-news.jpg)')
+        .banner-mask
+            .container
+                h2 新闻中心
+                p 我们致力于打造一个优秀的建站资源共享学习平台
+    main.main
+        .container
+            .ny-menu.text-center
+                ul.list-inline
+                    li
+                        a.btn-title(href='news_show') 公司新闻
+                    li
+                        a.btn-title(href='news_show') 产品动态
+                    li
+                        a.btn-title(href='news_show') 行业知识
+            section.content
+                .row.new-news
+                    .new-news-box.col-xs-12.col-sm-12.col-md-10.col-lg-10.col-lg-offset-1.col-md-offset-1
+                        .row
+                            figure.col-xs-4.col-sm-4.col-md-4.col-lg-4
+                                a(href='news_show', target='_blank')
+                                    img(src='/public/images/1-16050Q931590-L.jpg' width='262', height='188')
+                                    span.new-pic.hidden-xs
+                            .col-xs-8.col-sm-8.col-md-8.col-lg-8
+                                h3
+                                    a(href='news_show', target='_blank') 火星人-建站资源共享学习平台
+                                time.visible-lg-block 2016-05-08
+                                p
+                                    | 火星人（www.22vd.com）专业提供网站模板，网页模板，网站源码，网站素材，网页特效等网页设计素材免费下载。我们致力于打造一个优秀的建站资源共享学习平台。 火星人离不开您的参
+                                p.hidden-xs
+                                    a.btn-center.l-m-none(href='news_show') 阅读全文
+                        .row
+                            figure.col-xs-4.col-sm-4.col-md-4.col-lg-4
+                                a(href='news_show', target='_blank')
+                                    img(src='/public/images/1-16050Q931130-L.png' width='262', height='188')
+                                    span.new-pic.hidden-xs
+                            .col-xs-8.col-sm-8.col-md-8.col-lg-8
+                                h3
+                                    a(href='news_show', target='_blank') discuz视频教程
+                                time.visible-lg-block 2016-05-08
+                                p
+                                    | 学会掌握： 能运用discuz程序搭建一个网站，可以开发discuz模板  适合人群： 网站站长，网站设计师，程序开发者  章节1：Discuz的安装使用 前言：Discuz!建站系统介绍  10分 29秒
+                                    | [免
+                                p.hidden-xs
+                                    a.btn-center.l-m-none(href='news_show') 阅读全文
+                        .row
+                            figure.col-xs-4.col-sm-4.col-md-4.col-lg-4
+                                a(href='news_show', target='_blank')
+                                    img(src='/public/images/1-16050Q930110-L.gif' width='262', height='188')
+                                    span.new-pic.hidden-xs
+                            .col-xs-8.col-sm-8.col-md-8.col-lg-8
+                                h3
+                                    a(href='news_show', target='_blank') 织梦dedecms视频教程
+                                time.visible-lg-block 2016-05-08
+                                p
+                                    | 学会掌握： 掌握织梦程序的操作和使用，能独立开发织梦模板并能运用织梦进行仿站。  适合人群： 想网络创业的同学、网站建设开发人员  章节1：织梦的安装使用 前言：织梦D
+                                p.hidden-xs
+                                    a.btn-center.l-m-none(href='news_show') 阅读全文
+                        .row
+                            figure.col-xs-4.col-sm-4.col-md-4.col-lg-4
+                                a(href='news_show', target='_blank')
+                                    img(src='/public/images/defaultpic.gif' width='262', height='188')
+                                    span.new-pic.hidden-xs
+                            .col-xs-8.col-sm-8.col-md-8.col-lg-8
+                                h3
+                                    a(href='news_show', target='_blank') 响应式Web设计的9项基本原则
+                                time.visible-lg-block 2015-09-12
+                                p
+                                    | 响应式web设计对于解决多类型屏幕问题来说是个不错方案，但从印刷的角度来看，其却存在着很多的困难。没有固定的页面尺寸、没有毫米或英寸，没有任何物 理限制，让人感到无从下
+                                p.hidden-xs
+                                    a.btn-center.l-m-none(href='news_show') 阅读全文
+                        .row
+                            figure.col-xs-4.col-sm-4.col-md-4.col-lg-4
+                                a(href='news_show' target='_blank')
+                                    img(src='/public/images/1-150I11F211338.jpg' width='262', height='188')
+                                    span.new-pic.hidden-xs
+                            .col-xs-8.col-sm-8.col-md-8.col-lg-8
+                                h3
+                                    a(href='news_show' target='_blank') 火星人-建站资源共享学习平台
+                                time.visible-lg-block 2015-07-31
+                                p
+                                    | 让设计者省心，购买者放心
+                                    | 设计者：如果您是模板设计师，插件制作者。您可以在这里放心出售您的模板和插件，我们提供版权保护。
+                                    | 购买者：购买本站资源，我们提供“三重保障”(担保交
+                                p.hidden-xs
+                                    a.btn-center.l-m-none(href='news_show') 阅读全文
+                .list-page
+                    .dede_pages
+                        ul.pagelist
+                            li
+                                a 首页
+                            li.thisclass
+                                a 1
+                            li
+                                a(href='javascript:;') 2
+                            li
+                                a(href='javascript:;') 下一页
+                            li
+                                a(href='javascript:;') 末页
+                            li
+                                span.pageinfo
+                                    | 共 
+                                    strong 2
+                                    | 页
+                                    strong 7
+                                    | 条
+
+    include lib/footer
+block script
+    script.
+

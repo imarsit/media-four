@@ -1,0 +1,161 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/public/images/banner-case.jpg);')
+        .banner-mask
+            .container
+                h2 案例产品
+                p 我们提供网站模板，网页模板等建站素材下载
+    main.main
+        .container
+            .ny-menu.text-center
+                ul.list-inline
+                    li
+                        a.btn-title(href='cases') 手机应用
+                    li
+                        a.btn-title(href='cases') 网站设计
+                    li
+                        a.btn-title(href='cases') 平面设计
+            section.content
+                .row.case-box
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-1509121501270-L.jpg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 火星人-建站资源共享学习平台
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='websj/index.htm') 网站设计
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-150I11A5030-L.jpg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 在网页设计中运用柔和色调
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='shouji/index.htm') 手机应用
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-150I11I315O9.jpg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 导航设计模式的重要意义
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='pingmian/index.htm') 平面设计
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-150I11H0260-L.jpg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank")
+                                        | 芯片市场竞争激烈，高通裁员
+                                        | 15 %、考虑
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='websj/index.htm') 网站设计
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-1509121500440-L.jpeg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 5项提高产品设计的交互模式
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='shouji/index.htm') 手机应用
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-1509121500040-L.jpeg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 导航设计模式的重要意义
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='shouji/index.htm') 手机应用
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-1509121459210-L.jpeg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank")
+                                        | 好想立刻跳进蔚蓝里
+                                        | 全世界最大游泳池
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='shouji/index.htm') 手机应用
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='cases_show' target="_blank")
+                                img(src='/public/images/1-150912145S80-L.png' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='cases_show' target="_blank") 响应式Web设计的9项基本原则
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='shouji/index.htm') 手机应用
+                                span.visible-lg-block.visible-md-block
+                    .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                        figure
+                            a(href='#')
+                                img(src='/public/images/1-150H21HJ00-L.jpg' width='360', height='258')
+                            figcaption.pic-hover
+                                h3
+                                    a(href='#') 火星人-建站资源共享学习平台
+                                ul.list-inline
+                                    li Category / 
+                                    li
+                                        a(href='cases') 案例产品
+                                span.visible-lg-block.visible-md-block
+                .list-page
+                    .dede_pages
+                        ul.pagelist
+                            li
+                                a 首页
+                            li.thisclass
+                                a 1
+                            li
+                                a(href='javascript:;') 2
+                            li
+                                a(href='javascript:;') 下一页
+                            li
+                                a(href='javascript:;') 末页
+                            li
+                                span.pageinfo
+                                    | 共 
+                                    strong 2
+                                    | 页
+                                    strong 10
+                                    | 条
+
+    include lib/footer
+
+block script
+    script.

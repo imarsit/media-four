@@ -1,0 +1,70 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/22vd/images/banner-team.jpg)')
+        .banner-mask
+            .container
+                h2 团队人员
+                p 我们致力于打造一个优秀的建站资源共享学习平台
+    main.main
+        .container
+            // menu
+            // content start
+            section.content
+                .row.team-box.text-center
+                    .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                        figure
+                            a(href='team_show' target='_blank')
+                                img(src='/public/images/1-16050Q624390-L.jpg', tppabs='http://dede08.va666.com/uploads/allimg/160508/1-16050Q624390-L.jpg', alt='Eeala', width='260', height='260')
+                                span.new-pic
+                            figcaption.pic-hover
+                                h3
+                                    a(href='team_show' target='_blank') Eeala
+                                span
+                                p 平面设计师
+                    .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                        figure
+                            a(href='team_show' target='_blank')
+                                img(src='/public/images/1-16050Q626280-L.jpg' width='260', height='260')
+                                span.new-pic
+                            figcaption.pic-hover
+                                h3
+                                    a(href='team_show' target='_blank') Siri
+                                span
+                                p SEO优化编辑
+                    .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                        figure
+                            a(href='team_show' target='_blank')
+                                img(src='/public/images/1-16050Q625420-L.jpg' width='260', height='260')
+                                span.new-pic
+                            figcaption.pic-hover
+                                h3
+                                    a(href='team_show' target='_blank') Green.Li
+                                span
+                                p 程序员
+                    .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                        figure
+                            a(href='team_show' target='_blank')
+                                img(src='/public/images/1-16050Q622590-L.jpg' width='260', height='260')
+                                span.new-pic
+                            figcaption.pic-hover
+                                h3
+                                    a(href='team_show' target='_blank') Moke
+                                span
+                                p 火星人站长
+                .list-page
+                    .dede_pages
+                        ul.pagelist
+                            li
+                                span.pageinfo
+                                    | 共 
+                                    strong 1
+                                    | 页
+                                    strong 4
+                                    | 条记录
+
+    include lib/footer

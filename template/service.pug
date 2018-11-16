@@ -1,0 +1,79 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/public/images/banner-service.jpg)')
+        .banner-mask
+            .container
+                h2 打造完美空间
+                p 更贴心的设计，更放心的质量，更省心的服务
+    main.main
+        #fuwu.container
+            .ny-menu.text-center
+                ul.list-inline
+                    li
+                        a.btn-title(href='#fuwu') 专业
+                    li
+                        a.btn-title(href='#fuwu2') 优势
+                    li
+                        a.btn-title(href='#fuwu3') 配套
+                    li
+                        a.btn-title(href='#fuwu4') 项目
+                    li
+                        a.btn-title(href='#fuwu5') 流程
+                    li
+                        a.btn-title(href='#fuwu6') 客户
+            section.content
+                .row.hbfw
+                    .col-xs-12.col-sm-12.col-md-10.col-lg-10.col-lg-offset-1.col-md-offset-1
+                        #fuwu1.row
+                            .col-xs-12.col-sm-5.col-md-5.col-lg-5.col-lg-push-7
+                                img(alt='广东省20强优秀企业.jpg', title='广东省20强优秀企业.jpg', src='/public/images/2015091512289483.jpg')
+                            .col-xs-12.col-sm-7.col-md-7.col-lg-7.col-lg-pull-5
+                                h2 十年专注高端空间设计与施工
+                                p
+                                    | 火星人成立于2005年，荣获广东省20强优秀企业，10年专注于高端空间设计（办公写字楼、餐厅酒楼、娱乐会所、别墅豪宅空间）、一站式配套、软装陈列设计、智能化系统及风水环境策划等，主导智空间设计，集人体工程学、人性化、艺术化、智能化、商业化、国际化于一身的完美空间。
+                                p
+                                    a.btn-center.l-m-none( href="javascript:;") 了解更多
+                        .text-center
+                            #fuwu2
+                                h2.b-m-60 十年专注，勇于创新
+                                p.b-m-40
+                                    img( title='十年专注，勇于创新.jpg', src='/public/images/2015091512444642.jpg')
+                                p
+                                    | 火星人拥有由国家颁发《建筑装饰装修工程设计与施工》贰级资质，公司秉承“以信誉赢尊重，以品质求发展”的企业经营理念，主导智空间、精工程、心服务等特色服务。服务是企业生存的根本，好的设计更需要好的工程质量来支撑。
+                                p
+                                    a.btn-center(href="javascript:;") 了解更多
+                        .text-center
+                            #fuwu3
+                                h2.b-m-60 一站式配套服务，全面省心
+                                p
+                                    img( title='一站式配套服务，全面省心.jpg', src='/public/images/2015091512580650.jpg')
+                                p
+                                    a.btn-center(href="javascript:;") 了解更多
+                            #fuwu4
+                                h2.b-m-60 系统化工程管控，保质保量保时间
+                                p.b-m-40
+                                    img( title='系统化工程管控，保质保量保时间.jpg', src='/public/images/2015091512475140.jpg')
+                                p
+                                    a.btn-center(href="javascript:;") 了解更多
+                            #fuwu5
+                                h2.b-m-60 六步服务流程，响应快速
+                                p.b-m-40
+                                    img( title='六步服务流程，响应快速.jpg', src='/public/images/2015091512591650.jpg')
+                                p
+                                    a.btn-center(href="javascript:;") 了解更多
+                            #fuwu6
+                                h2.b-m-60 超过1000家品牌企业的选择
+                                p.b-m-40
+                                    img( title='超过1000家品牌企业的选择.jpg', src='/public/images/2015091512599273.jpg')
+                                p
+                                    a.btn-center(href="javascript:;") 了解更多
+                .list_page
+    include lib/footer
+
+block script
+    script.

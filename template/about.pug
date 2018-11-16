@@ -1,0 +1,112 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    include lib/head
+    section.banner.text-center.full_bg(style='background-image:url(/22vd/images/banner-about.jpg)')
+        .banner-mask
+            .container
+                h2 关于我们
+                p 火星人已经上路，我们将为此不懈努力，期待得到您的支持
+    main.main
+        .container
+            section.content
+                .row.gywm
+                    .col-xs-12.col-sm-12.col-md-10.col-lg-10.col-lg-offset-1.col-md-offset-1
+                        .row
+                            figure.col-xs-12.col-sm-5.col-md-5.col-lg-5.col-lg-push-7
+                                p#_img_parent_tmp
+                                    img(alt='HBD海博品牌', src='/public/images/pp.jpg')
+                            article.col-xs-12.col-sm-7.col-md-7.col-lg-7.col-lg-pull-5
+                                h2 火星人品牌
+                                ul.list-unstyled.b-m-30.list-paddingleft-2
+                                    li
+                                        p
+                                            strong MOKE8
+                                            | — MO KE 8
+                                    li
+                                        p
+                                            strong 火星人
+                                            | — MOKE
+                                    li
+                                        p
+                                            strong 装饰
+                                            | — Decorative
+                                    li
+                                        p
+                                            strong 魔
+                                            | — 不疯魔，不成活
+                                    li
+                                        p
+                                            strong 客
+                                            | — 作事某种工作的人群
+                                    li
+                                        p
+                                            strong 火星人
+                                            | — 作事网站模板开发的设计师
+                                    li
+                                        p
+                                            strong 我们永远只做精品
+                        hr.big
+                        .row
+                            figure.col-xs-12.col-sm-5.col-md-5.col-lg-5
+                                p#_img_parent_tmp
+                                    img(title='0.jpg', alt='0.jpg', src='/public/images/2015110336501681.jpg')
+                            article.col-xs-12.col-sm-7.col-md-7.col-lg-7
+                                h2 火星人简介
+                                p
+                                    | 火星人（www.22vd.com）专业提供网站模板，网页模板，网站源码，网站素材，网页特效等网页设计素材免费下载。我们致力于打造一个优秀的建站资源共享学习平台。设计者：如果您是模板设计师，插件制作者。您可以在这里放心出售您的模板和插件，我们提供版权保护。购买者：购买本站资源，我们提供“三重保障”(担保交易+人工介入+售后服务)，保障购买者的合法权益。火星人已经上路，我们将为此不懈努力，期待得到您的支持！
+                        hr.big
+                        .row
+                            figure.col-xs-12.col-sm-5.col-md-5.col-lg-5.col-lg-push-7
+                                p#_img_parent_tmp
+                                    img(title='2.jpg', alt='2.jpg', src='/public/images/2015110337042077.jpg')
+                            article.col-xs-12.col-sm-7.col-md-7.col-lg-7.col-lg-pull-5
+                                h2 火星人企业文化
+                                ul.list-unstyled.list-paddingleft-2
+                                    li
+                                        p
+                                            strong 企业全称
+                                            | — 火星人科技股份有限公司
+                                    li
+                                        p
+                                            strong 企业愿景
+                                            | — 打造国内最优秀的建站资源共享平台
+                                    li
+                                        p
+                                            strong 企业使命
+                                            | — 提供优秀的建站资源下载
+                                    li
+                                        p
+                                            strong 核心价值观
+                                            | — 专业 创新 严谨 负责
+                                    li
+                                        p
+                                            strong 经营理念
+                                            | — 以信誉赢尊重，以品质求发展
+                                    li
+                                        p
+                                            strong 服务理念
+                                            | — 主动服务，超越期待
+                                    li
+                                        p
+                                            strong 质量理念
+                                            | — 精雕细琢，精益求精
+                        hr.big
+                        h2.text-center 媒体报道
+                        .row.t-m-30
+                            figure.col-xs-6.col-sm-3.col-md-3.col-lg-3.b-m-30
+                                img(alt='火星人1', src='/public/images/mt1.jpg')
+                            figure.col-xs-6.col-sm-3.col-md-3.col-lg-3.b-m-30
+                                img(alt='火星人2', src='/public/images/mt2.jpg')
+                            figure.col-xs-6.col-sm-3.col-md-3.col-lg-3.b-m-30
+                                img(alt='火星人3', src='/public/images/mt3.jpg')
+                            figure.col-xs-6.col-sm-3.col-md-3.col-lg-3.b-m-30
+                                img(alt='火星人4', src='/public/images/mt4.jpg')
+                        p.text-center
+                            | 火星人（www.22vd.com）专业提供网站模板，网页模板，网站源码，网站素材，网页特效等网页设计素材免费下载。我们致力于打造一个优秀的建站资源共享学习平台。火星人已经上路，我们将为此不懈努力，期待得到您的支持！
+                .list_page
+
+    include lib/footer

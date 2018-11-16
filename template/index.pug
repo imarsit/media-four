@@ -1,0 +1,256 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+block content
+    include lib/head
+    section.banner
+        #owl-banner.owl-carousel.owl-theme
+            .item(style='background:url(/public/images/bg5.jpg)')
+                a(target='_blank', href="javascript:;")
+                    img.center-block(src='/public/images/banner-height.gif')
+            .item(style='background:url(/public/images/bg2.jpg)')
+                a(target='_blank', href="javascript:;")
+                    img.center-block(src='/public/images/banner-height.gif')
+            .item(style='background:url(/public/images/bg3.jpg)')
+                a(target='_blank', href="javascript:;" )
+                    img.center-block(src='/public/images/banner-height.gif')
+            .item(style='background:url(/public/images/bg4.jpg)')
+                a(target='_blank', href="javascript:;" )
+                    img.center-block(src='/public/images/banner-height.gif')
+
+    section.service.container.sx-jianju.text-center
+        h2.h-h2 火星人模板平台
+        p.m-sm.xx 我们致力于打造一个优秀的建站资源共享学习平台
+        .row
+            figure.col-xs-12.col-sm-12.col-md-4.col-lg-4
+                span.service-kj
+                h3
+                    a(href="javascript:;" ) 建站资源共享学习平台
+                ul.list-unstyled
+                    li 提供网站模板，网页模板免费下载
+                    li 提供网站素材，网页特效等建站资源
+                    li 国内最大的建站资源共享平台
+                    li 在这里可以找到你想要的东西
+            figure.col-xs-12.col-sm-12.col-md-4.col-lg-4
+                span.service-gc
+                h3
+                    a(href="javascript:;" ) 在线网站建设视频观看
+                ul.list-unstyled
+                    li 通过在线视频学习网站建设知识
+                    li 视频包含网站建设各方面知识
+                    li 零基础也能学习网站建设
+                    li 超多实站案例模板供大家学习参考
+            figure.col-xs-12.col-sm-12.col-md-4.col-lg-4
+                span.service-fw
+                h3
+                    a(href="javascript:;") 在线远程建站培训
+                ul.list-unstyled
+                    li 能过QQ群远程视频在线培训
+                    li 提供5×8小时在线技术支持
+                    li 价值上万极品资源无限制下载
+                    li 火星人创始人火星人老师主讲
+        p.m-none
+            a.btn-center(href="javascript:;" ) 了解更多
+
+    section.client.client-bg.sx-jianju.full_bg.text-center
+        .container
+            h2.h-h2 服务客户，上千家品牌企业首选
+            p.m-sm 用行动捍卫客户信任，超过1000家品牌企业的选择
+            .row
+                .col-xs-12.col-sm-12.col-md-10.col-lg-10.col-lg-offset-1.col-md-offset-1
+                    .row
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client1.jpg')
+                                figcaption 要玩游戏公司
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client2.jpg')
+                                figcaption 凡拓数码科技
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client3.jpg')
+                                figcaption 赛意信息科技
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client4.jpg')
+                                figcaption 百田信息
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client5.jpg')
+                                figcaption 智远商旅
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client6.jpg')
+                                figcaption 酷狗音乐
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client7.jpg')
+                                figcaption 无穷食品
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client8.jpg')
+                                figcaption 凡力健身房
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client9.jpg')
+                                figcaption 铁塔股份集团
+                        figure.col-xs-6.col-sm-3.col-md-3.col-lg-20
+                            a(href="javascript:;")
+                                img(src='/public/images/client10.jpg')
+                                figcaption 联合书店
+                    p.m-none
+                        a.btn-center(href="javascript:;") 查看更多
+                        a.btn-center(href="javascript:;") 客户名录
+
+    section.case.sx-jianju.text-center
+        .container
+            h2.h-h2 成功案例，打造完美空间
+            p.m-sm 以信誉赢尊重，以品质求发展
+            .row.case-box
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-1509121501270-L.jpg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 火星人-建站资源共享学习
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 网站设计
+                            span.visible-lg-block.visible-md-block
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-150I11A5030-L.jpg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 在网页设计中运用柔和色
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 手机应用
+                            span.visible-lg-block.visible-md-block
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-150I11I315O9.jpg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 导航设计模式的重要意义
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 平面设计
+                            span.visible-lg-block.visible-md-block
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-150I11H0260-L.jpg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 芯片市场竞争激烈，高通
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 网站设计
+                            span.visible-lg-block.visible-md-block
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-1509121500440-L.jpeg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 5项提高产品设计的交互模
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 手机应用
+                            span.visible-lg-block.visible-md-block
+                .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                    figure
+                        a(href='javascript:;')
+                            img(src='/public/images/1-1509121500040-L.jpeg' width='360', height='258')
+                        figcaption.pic-hover
+                            h3
+                                a(href='javascript:;') 导航设计模式的重要意义
+                            ul.list-inline
+                                li Category / 
+                                li
+                                    a(href='javascript:;') 手机应用
+                            span.visible-lg-block.visible-md-block
+            p.m-none
+                a.btn-center(href='cases') 更多案例
+
+    section.team.sx-jianju.full_bg.text-center
+        .container
+            h2.h-h2 火星人团队，贴心服务
+            p.m-sm 主动服务，超越期待，不怕提要求，就怕没要求
+            #owl-team.owl-carousel.owl-theme
+                figure.item
+                    a.shake(href="javascript:;")
+                        img.lazyOwl(src='/public/images/1-16050Q624390-L.jpg' width='200', height='200')
+                    figcaption
+                        h3
+                            a(href='javascript:;') Eeala
+                        p 平面设计师
+                        p.m-none
+                            a.btn-center(href='javascript:;') 了解我们
+                            a.btn-center(href='javascript:;') 团队风采
+                figure.item
+                    a.shake(href="javascript:;")
+                        img.lazyOwl(src='/public/images/1-16050Q626280-L.jpg' width='200', height='200')
+                    figcaption
+                        h3
+                            a(href='javascript:;') Siri
+                        p SEO优化编辑
+                        p.m-none
+                            a.btn-center(href='javascript:;') 了解我们
+                            a.btn-center(href='javascript:;') 团队风采
+                figure.item
+                    a.shake(href="javascript:;")
+                        img.lazyOwl(src='/public/images/1-16050Q625420-L.jpg' width='200', height='200')
+                    figcaption
+                        h3
+                            a(href='javascript:;') Green.Li
+                        p 程序员
+                        p.m-none
+                            a.btn-center(href='javascript:;') 了解我们
+                            a.btn-center(href='javascript:;') 团队风采
+                figure.item
+                    a.shake(href="javascript:;")
+                        img.lazyOwl(src='/public/images/1-16050Q622590-L.jpg' width='200', height='200')
+                    figcaption
+                        h3
+                            a(href='javascript:;') Moke
+                        p 火星人站长
+                        p.m-none
+                            a.btn-center(href='javascript:;') 了解我们
+                            a.btn-center(href='javascript:;') 团队风采
+
+    section.about.sx-jianju.container.text-center
+        h2.h-h2 火星人十年，感恩有您
+        p.m-sm 我们致力于打造一个优秀的建站资源共享学习平台
+        .row.text-left
+            figure.col-xs-12.col-sm-12.col-md-5.col-lg-6.text-center
+                img(src='/public/images/about-pic.jpg')
+            figure.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-offset-1.col-lg-offset-0
+                h3 火星人简介
+                p
+                    | 火星人（www.22vd.com）专业提供网站模板，网页模板，网站源码，网站素材，网页特效等网页设计素材免费下载。我们致力于打造一个优秀的建站资源共享学习平台。从零开始系统全面的教你如何建立一个属于自己的网站并实现盈利。火星人老师通过QQ群远程教学，全面系统的给大家讲解建站知识。内容涉及网站搭建，网站优化，模板开发等最新建站技术。火星人已经上路，我们将为此不懈努力，期待得到您的支持！
+                ul.list-inline
+                    li
+                        a.btn-center(href='javascript:;') 阅读全文
+                    li
+                        a.btn-center(href='javascript:;') 资质荣誉
+                    li
+                        a.btn-center(href='javascript:;') 服务流程
+                    li
+                        a.btn-center(href='javascript:;') 服务优势
+
+
+    include lib/footer
+block script
+    script.
